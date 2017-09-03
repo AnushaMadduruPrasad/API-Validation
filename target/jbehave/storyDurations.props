@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Sun Sep 03 17:50:19 BST 2017
+Stories/validate_products.story=2000
+threads=1
+total=2000
+threadAverage=2000

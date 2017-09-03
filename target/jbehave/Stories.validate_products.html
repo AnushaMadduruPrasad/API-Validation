@@ -1,0 +1,28 @@
+<div class="story">
+<h1>Feature: Validate products micro service</h1>
+<div class="path">Stories/validate_products.story</div>
+<div class="scenario">
+<h2>Scenario: Validate user gets size in the response of 'Validation' web service</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given 'Validation' REST API is up and running</div>
+<div class="step">When user sends request to 'Validation' web service</div>
+<div class="step">Then user should get &lt;size&gt; in the response of the web service call</div>
+<table>
+<thead>
+<tr>
+<th>size</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {size=1, regression=, runas=test}</h3>
+<div class="step successful">Given 'Validation' REST API is up and running</div>
+<div class="step successful">When user sends request to 'Validation' web service</div>
+<div class="step successful">Then user should get <span class="step parameter">1</span> in the response of the web service call</div>
+</div>
+</div>
+</div>

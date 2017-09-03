@@ -1,0 +1,1271 @@
+{"xref": {
+  "stories": [
+    {
+      "story": {
+        "path": "Stories/validate_products.story",
+        "description": {
+          "descriptionAsString": "Feature: Validate products micro service"
+        },
+        "narrative": {
+          "inOrderTo": "",
+          "asA": "",
+          "iWantTo": "",
+          "soThat": ""
+        },
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "lifecycle": {
+          "before": {
+            "steps": [
+              []
+            ]
+          },
+          "after": []
+        },
+        "scenarios": [
+          {
+            "title": "Validate user get objectOrArray in the response of 'Validation' web service",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "regression",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|objectOrArray|\r\n|array|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "objectOrArray"
+              ],
+              "data": [
+                [
+                  [
+                    "objectOrArray",
+                    "array"
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given 'Validation' REST API is up and running",
+              "When user sends request to 'Validation' web service",
+              "Then user should get <objectOrArray> in the response of the web service call"
+            ]
+          },
+          {
+            "title": "Validate user get empty object in the response of 'Validation' web service",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "regression",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|empty|\r\n|array|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "empty"
+              ],
+              "data": [
+                [
+                  [
+                    "empty",
+                    "array"
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given 'Validation' REST API is up and running",
+              "When user sends request to 'Validation' web service",
+              "Then user should get <empty> in the response of the web service call"
+            ]
+          },
+          {
+            "title": "Validate user gets parse_time_nanoseconds in the response of 'Validation' web service",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "regression",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [],
+              "data": [],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given 'Validation' REST API is up and running",
+              "When user sends request to 'Validation' web service",
+              "Then user should get parse_time_nanoseconds in the response of the web service call"
+            ]
+          },
+          {
+            "title": "Validate user gets validate in the response of 'Validation' web service",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "regression",
+                  "@value": ""
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|validate|\r\n|true|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "validate"
+              ],
+              "data": [
+                [
+                  [
+                    "validate",
+                    "true"
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given 'Validation' REST API is up and running",
+              "When user sends request to 'Validation' web service",
+              "Then user should get <validate> in the response of the web service call"
+            ]
+          },
+          {
+            "title": "Validate user gets size in the response of 'Validation' web service",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "regression",
+                  "@value": ""
+                },
+                {
+                  "@name": "runas",
+                  "@value": "test"
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|size|\r\n|1|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "size"
+              ],
+              "data": [
+                [
+                  [
+                    "size",
+                    "1"
+                  ],
+                  [
+                    "regression",
+                    ""
+                  ],
+                  [
+                    "runas",
+                    "test"
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given 'Validation' REST API is up and running",
+              "When user sends request to 'Validation' web service",
+              "Then user should get <size> in the response of the web service call"
+            ]
+          }
+        ],
+        "name": "validate_products.story"
+      },
+      "localizedNarrative": "As a \nI want to \nSo that ",
+      "allowed": true,
+      "status": "SUCCESSFUL",
+      "givenStories": [],
+      "scenarios": [
+        {
+          "scenario": {
+            "title": "Validate user gets size in the response of 'Validation' web service",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "regression",
+                  "@value": ""
+                },
+                {
+                  "@name": "runas",
+                  "@value": "test"
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|size|\r\n|1|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "size"
+              ],
+              "data": [
+                [
+                  [
+                    "size",
+                    "1"
+                  ],
+                  [
+                    "regression",
+                    ""
+                  ],
+                  [
+                    "runas",
+                    "test"
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given 'Validation' REST API is up and running",
+              "When user sends request to 'Validation' web service",
+              "Then user should get <size> in the response of the web service call"
+            ]
+          },
+          "storyPath": "Stories/validate_products.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "size",
+                  "1"
+                ],
+                [
+                  "regression",
+                  ""
+                ],
+                [
+                  "runas",
+                  "test"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given 'Validation' REST API is up and running",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given 'Validation' REST API is up and running",
+                    "durationInMillis": 85
+                  },
+                  {
+                    "step": "When user sends request to 'Validation' web service",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When user sends request to 'Validation' web service",
+                    "durationInMillis": 1564
+                  },
+                  {
+                    "step": "Then user should get <size> in the response of the web service call",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then user should get ?1? in the response of the web service call",
+                    "durationInMillis": 340
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": [
+                  {
+                    "@name": "regression",
+                    "@value": ""
+                  },
+                  {
+                    "@name": "runas",
+                    "@value": "test"
+                  }
+                ]
+              },
+              "scenario": {
+                "title": "Validate user gets size in the response of 'Validation' web service",
+                "meta": {
+                  "properties": [
+                    {
+                      "@name": "regression",
+                      "@value": ""
+                    },
+                    {
+                      "@name": "runas",
+                      "@value": "test"
+                    }
+                  ]
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "headerSeparator": "|",
+                    "valueSeparator": "|",
+                    "ignorableSeparator": "|--",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FORMATTING",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ],
+                    "propertiesAsString": "",
+                    "namedParameters": [],
+                    "trim": true
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|size|\r\n|1|",
+                  "headerSeparator": "|",
+                  "valueSeparator": "|",
+                  "ignorableSeparator": "|--",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FORMATTING",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "size"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "size",
+                        "1"
+                      ],
+                      [
+                        "regression",
+                        ""
+                      ],
+                      [
+                        "runas",
+                        "test"
+                      ]
+                    ]
+                  ],
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ],
+                  "propertiesAsString": "",
+                  "namedParameters": [],
+                  "trim": true
+                },
+                "steps": [
+                  "Given 'Validation' REST API is up and running",
+                  "When user sends request to 'Validation' web service",
+                  "Then user should get <size> in the response of the web service call"
+                ]
+              }
+            }
+          ],
+          "status": "SUCCESSFUL"
+        }
+      ],
+      "beforeSteps": {},
+      "afterSteps": {},
+      "timing": {
+        "durationInMillis": 2102
+      },
+      "givenStory": false
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": {
+        "title": "Validate user gets size in the response of 'Validation' web service",
+        "meta": {
+          "properties": [
+            {
+              "@name": "regression",
+              "@value": ""
+            },
+            {
+              "@name": "runas",
+              "@value": "test"
+            }
+          ]
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "headerSeparator": "|",
+            "valueSeparator": "|",
+            "ignorableSeparator": "|--",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FORMATTING",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ],
+            "propertiesAsString": "",
+            "namedParameters": [],
+            "trim": true
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|size|\r\n|1|",
+          "headerSeparator": "|",
+          "valueSeparator": "|",
+          "ignorableSeparator": "|--",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FORMATTING",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "size"
+          ],
+          "data": [
+            [
+              [
+                "size",
+                "1"
+              ],
+              [
+                "regression",
+                ""
+              ],
+              [
+                "runas",
+                "test"
+              ]
+            ]
+          ],
+          "properties": [
+            {
+              "@name": "headerSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "valueSeparator",
+              "@value": "|"
+            },
+            {
+              "@name": "ignorableSeparator",
+              "@value": "|--"
+            }
+          ],
+          "propertiesAsString": "",
+          "namedParameters": [],
+          "trim": true
+        },
+        "steps": [
+          "Given 'Validation' REST API is up and running",
+          "When user sends request to 'Validation' web service",
+          "Then user should get <size> in the response of the web service call"
+        ]
+      },
+      "storyPath": "Stories/validate_products.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "size",
+              "1"
+            ],
+            [
+              "regression",
+              ""
+            ],
+            [
+              "runas",
+              "test"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given 'Validation' REST API is up and running",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given 'Validation' REST API is up and running",
+                "durationInMillis": 85
+              },
+              {
+                "step": "When user sends request to 'Validation' web service",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When user sends request to 'Validation' web service",
+                "durationInMillis": 1564
+              },
+              {
+                "step": "Then user should get <size> in the response of the web service call",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then user should get ?1? in the response of the web service call",
+                "durationInMillis": 340
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": [
+              {
+                "@name": "regression",
+                "@value": ""
+              },
+              {
+                "@name": "runas",
+                "@value": "test"
+              }
+            ]
+          },
+          "scenario": {
+            "title": "Validate user gets size in the response of 'Validation' web service",
+            "meta": {
+              "properties": [
+                {
+                  "@name": "regression",
+                  "@value": ""
+                },
+                {
+                  "@name": "runas",
+                  "@value": "test"
+                }
+              ]
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "headerSeparator": "|",
+                "valueSeparator": "|",
+                "ignorableSeparator": "|--",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FORMATTING",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ],
+                "propertiesAsString": "",
+                "namedParameters": [],
+                "trim": true
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|size|\r\n|1|",
+              "headerSeparator": "|",
+              "valueSeparator": "|",
+              "ignorableSeparator": "|--",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FORMATTING",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "size"
+              ],
+              "data": [
+                [
+                  [
+                    "size",
+                    "1"
+                  ],
+                  [
+                    "regression",
+                    ""
+                  ],
+                  [
+                    "runas",
+                    "test"
+                  ]
+                ]
+              ],
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ],
+              "propertiesAsString": "",
+              "namedParameters": [],
+              "trim": true
+            },
+            "steps": [
+              "Given 'Validation' REST API is up and running",
+              "When user sends request to 'Validation' web service",
+              "Then user should get <size> in the response of the web service call"
+            ]
+          }
+        }
+      ],
+      "status": "SUCCESSFUL"
+    }
+  ]
+}}

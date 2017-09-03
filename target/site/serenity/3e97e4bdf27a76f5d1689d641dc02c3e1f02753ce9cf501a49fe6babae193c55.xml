@@ -1,0 +1,36 @@
+<acceptance-test-run title="Validate user gets size in the response of &apos;Validation&apos; web service" name="Validate user gets size in the response of &apos;Validation&apos; web service" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="2038" timestamp="2017-09-03T17:50:17.567+01:00">
+  <user-story id="validate_products" name="Validate products" path="Stories/validate_products.story"/>
+  <tags>
+    <tag name="Validate products" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>size</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {size=1, regression=, runas=test}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="85">
+      <description>Given &apos;Validation&apos; REST API is up and running</description>
+    </test-step>
+    <test-group name="When user sends request to &apos;Validation&apos; web service" result="SUCCESS">
+      <test-group name="Send request to validation" result="SUCCESS">
+        <test-step result="SUCCESS" duration="0">
+          <description>GET http://validate.jsontest.com/?json=%5BJSON-code-to-validate%5D&#xd;&#xd;</description>
+        </test-step>
+      </test-group>
+    </test-group>
+    <test-group name="Then user should get {1} in the response of the web service call" result="SUCCESS">
+      <test-step result="SUCCESS" duration="331">
+        <description>Should see size as: 1</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>
